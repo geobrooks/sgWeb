@@ -2,6 +2,35 @@
 <html>
 	<head>
 		<title>Geoff's Portfolio</title>
+		<link href="style.css" rel="stylesheet" type="text/css" />
+		
+		<style>
+		
+			table, th, td {
+				border: 1px solid #292533;
+				padding: 5px 5px 5px 5px;	
+				border-spacing:2px 2px;
+			}
+			
+			table {
+				width: 100%;
+			}
+		
+			td, th {
+				height: 30px;
+			}
+			
+			th {
+				background-color: #5b7d87;
+				color: #fff;
+			}
+			
+			tr:nth-child(odd) {
+				background-color: #d5d2cb;
+			}
+			
+		</style>
+		
 	</head>
 	
 	<body>
@@ -12,49 +41,140 @@
 		<br />
 		
 		<div id="navigation">
-		<hr />
-			<a href="./projects.html">Projects</a>
-			<a href="./contact.html">Contact Me</a>
-			<a href="./testimonials.html">Testimonials</a>
-<!-- The links we’ll need are: projects.html, contactMe.html, and testimonials.html -->
-		<hr />
+		<hr style="border-top:3px double #ce0707;" />
+			<p>
+			<a href="./portfolio.html" target="_blank">Projects</a>
+			<a href="./contact.html" target="_blank">Contact Me</a>
+			<a href="./testimonials.html" target="_blank">Testimonials</a>
+			</p>
+		<hr style="border-top:3px double #ce0707;" />
 		</div>
 		
 		<div id="main">
-		<h2><em>About Me</em></h2>
+		
 		
 		<div id="aboutMe" style="border: 1px solid; padding: 20px;">
+			<div class="image">
+			<img src="images/one.jpg" alt="Photo of flowers">
+			</div>
+			<div class="content"> 
+			<h2><em>About Me</em></h2>
 			<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla massa, fermentum vel mattis eu, sollicitudin sit amet lorem. Vestibulum lorem turpis, blandit at maximus ut, volutpat ac turpis. Donec id ante nulla. 
 			</p>
 			<p>	
 				Integer semper nec mi vitae dignissim. Sed pulvinar mauris eu ullamcorper varius. Nam velit quam, finibus et quam vitae, vestibulum pellentesque velit. Nam fermentum justo quis lectus maximus iaculis. Ut ut lacinia nunc.
 			</p>
+			</div>
 		</div>
 	
-	
-		<h2><em>Past Experiences</em></h2>
+	<br />
 	
 		<div id="pastExperiences" style="border: 1px solid; padding: 20px;">
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla massa, fermentum vel mattis eu, sollicitudin sit amet lorem. Vestibulum lorem turpis, blandit at maximus ut, volutpat ac turpis. Donec id ante nulla. Integer semper nec mi vitae dignissim. Sed pulvinar mauris eu ullamcorper varius. Nam velit quam, finibus et quam vitae, vestibulum pellentesque velit.
-			</p>
+			<div class="image">
+						<img src="images/two.jpg" alt="Photo of flowers">
+			</div>
+			<div class="content">
+			<h2><em>Past Experiences</em></h2>
 			
-			<p>
-				Nam fermentum justo quis lectus maximus iaculis. Ut ut lacinia nunc. Proin accumsan sodales magna, id volutpat sem sodales rutrum. Sed porttitor maximus molestie. Aliquam non sem nunc. Curabitur consequat dui vel massa fringilla rutrum. Morbi varius nibh vel venenatis porta. Nullam non tincidunt ex.
-			</p>
+			<table>
+			<caption>Employment History</caption>
+				<tr>
+				<th>
+				Year
+				</th>
+				<th>
+				Title
+				</th>
+				<th>
+				Company
+				</th>
+		
+				</tr>
+				
+				<tr>
+				<td>
+				Current
+				</td>
+				<td>
+				Apprentice
+				</td>
+				<td>
+				The Softare Guild
+				</td>
+		
+				</tr>
+				
+				<tr>
+				<td>
+				2012-2017
+				</td>
+				<td>
+				Clerk
+				</td>
+				<td>
+				LostURMail Shipping
+				</td>
+		
+				</tr>
+				
+				<tr>
+				<td>
+				2000-2012
+				</td>
+				<td>
+				Student
+				</td>
+				<td>
+				University of Schmoe
+				</td>
+		
+				</tr>
+			
+			
+			
+			
+			</table>
+			
+			</div>
 		</div>		
 	
-		<h2><em>Hobbies</em></h2>
+	<br />		
 		
 		<div id="hobbies" style="border: 1px solid; padding: 20px;">
-			<p>
-				Nam fermentum justo quis lectus maximus iaculis. Ut ut lacinia nunc. Proin accumsan sodales magna, id volutpat sem sodales rutrum. Sed porttitor maximus molestie. Aliquam non sem nunc. Curabitur consequat dui vel massa fringilla rutrum. Morbi varius nibh vel venenatis porta. Nullam non tincidunt ex.
-			</p>
+			<div class="image">
+						<img src="images/three.jpg" alt="Photo of flowers">
+			</div>
+			<div class="content">
+			<h2><em>Hobbies</em></h2>
+				<ul>
+					<li>Reading</li>
+						<ol>
+							<li>Stephen King</li>
+							<li>Robin Hobb</li>
+							<li>Jim Butcher</li>
+						</ol>
+					<li>Fun Runs!</li>
+						<ol>
+							<li>The Color Run</li>
+							<li>Run for Your Lives</li>
+							<li>Rugged Maniac</li>
+						</ol>
+					<li>Ski Slopes</li>
+						<ul>
+							<li>Snowmass, Colorado</li>
+							<li>Taos, New Mexico</li>
+							<li>Okemo, Vermont</li>							
+						</ul>
+					<li>Virtual Running Group</li>	
+						<ul>
+							<li>Hogwarts Running Club</li>
+							<li>Whovian Running Club</li>
+							<li>Virtual Pace Series</li>							
+						</ul>
+				</ul>
 			
-			<p>
-				Curabitur consequat dui vel massa fringilla rutrum. Morbi varius nibh vel venenatis porta. Nullam non tincidunt ex.
-			</p>		
+			</div>
 		</div>
 		</div>
 		<br />
@@ -63,6 +183,7 @@
 		
 			<footer>
 			<p>&copy; 2018 Geoff B</p>
+			<p><a href="http://thesoftwareguild.com" target="_blank">Visit the Software Guild</a></p>
 			</footer>
 		
 		</div>

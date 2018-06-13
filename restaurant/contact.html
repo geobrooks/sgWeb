@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>The Restaurant</title>
+		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet" type="text/css">
+	
+	<style>
+	
+		#navigation {
+			background-color: #c06c84;
+			margin-top: -25px;
+			text-align: center;
+		}
+		
+		#navigation a{
+			padding: 0px 20px;
+			color: #fff;
+			text-transform: uppercase;
+			font-family: Roboto, sans-serif;
+		}
+	
+		input[type=text] {
+			background-color: 		#d5d2cb;
+			border:		1px	solid	#bbb;
+			width:		100%;
+			padding:	12px	20px;
+			margin:		8px 0 30px 0;
+			box-sizing:	border-box;
+			border-radius: 10px;
+		}
+		
+		input[type=checkbox] {
+			margin: 10px 5px;			
+		}
+
+		fieldset {
+			background-color: #d5d2cb;
+			width: 100%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing:	border-box;
+			
+		}
+
+		input, label {
+			font-size: 16px;
+			font-family: Roboto, sans-serif;
+		}
+
+		select {
+			background-color:	#d5d2cb;
+			width:	100%;
+			padding:	12px 20px;
+			margin:	8px 0 30px 0;
+			box-sizing:	border-box;
+			border-radius: 10px;
+			font-family: Roboto, sans-serif;
+
+		}
+
+		textarea {
+			width: 100%;
+			height: 200px;
+			padding: 12px 20px;
+			margin: 8px 0;
+			box-sizing: border-box;
+			border: 1px solid #bbb;
+			border-radius: 10px;
+			background-color: #d5d2cb;
+			resize: none;
+		}
+
+		input, submit{
+			background-color: #6C5B7B;
+			border: none;
+			color: white;
+			padding: 12px 20px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 16px;
+			border-radius: 10px;
+		}
+				
+	</style>
+	
+	</head>
+	
+	<body>
+	<div class="sheet">
+	<div style="padding:20px;">
+			<div id="title">
+				<h1><center>The Restaurant</center></h1>
+			</div>
+			
+			<br />
+		
+		<div id="navigation">
+		<hr />
+			<p>
+			<a href="./index.html" target="_parent">Home</a>
+			<a href="./foodMenu.html" target="_parent">Food Menu</a>
+			<a href="./drinkMenu.html" target="_parent">Drink Menu</a>
+			<a href="./contact.html" target="_parent">Contact Us</a>
+			</p>
+		<hr />
+		</div>
+		
+		<h2>Contact Us</h2>
+			<form action="submit.html" method="POST">
+				<label for="name"><span style="font-weight:bold";>Name:</span></label>
+					<input type="text" id="name" name="name" required> <br />
+				
+				<label for="email"><span style="font-weight:bold";>Email:</span></label>
+					<input type="text" id="email" name="email" required> <br />
+					
+				<label for="phoneNumber"><span style="font-weight:bold";>Phone Number:</span></label>
+					<input type="text" id="phoneNumber" name="phoneNumber" required> <br />
+				
+				<label for="reason">Reason for Inquiry:</label>
+					<select id="reason" name="reason">
+						<option value="default" selected>Catering</option>
+						<option value="privateParty">Private Party</option>
+						<option value="feedback">Feedback</option>
+						<option value="other">Other</option>
+					</select>
+				<br />
+				<label for="info">Additional Information</label>
+				<textarea id="info"></textarea>
+				<br />
+				<br />
+				<label for="dayOfWeek">Best days to contact you:</label>
+				<br />
+						<input type="checkbox" id="monday" name="dayOfWeek" value="monday">
+						<label for="monday">M</label>
+						
+						<input type="checkbox" id="tuesday" name="dayOfWeek" value="tuesday">
+						<label for="tuesday">T</label>
+						
+						<input type="checkbox" id="wednesday" name="dayOfWeek" value="wednesday">
+						<label for="wednesday">W</label>
+						
+						<input type="checkbox" id="thursday" name="dayOfWeek" value="thursday">
+						<label for="thursday">Th</label>
+						
+						<input type="checkbox" id="friday" name="dayOfWeek" value="friday">
+						<label for="friday">F</label>
+				<br />
+				<br />
+				<input type="submit" name="submit"  value="Submit">
+				<br />	
+				<br />	
+		<hr />
+		
+			<hr />
+			<div id="footer">
+		
+				<footer>
+				<center>
+					<p>Address: 452 Some Street - Ogden UT, 84404</p>
+					<p>Phone: (801)555-5555
+					<p>&copy; 2018 Geoff's Restaurant</p>
+				</center>
+				</footer>
+		
+			</div>
+			
+		</div>		
+	</div>	
+	</body>
+
+
+</html>
