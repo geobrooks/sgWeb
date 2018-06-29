@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="displayEvens.js"></script>
+</head>
+
+<body>
+	<h1>Number Sample</h1>
+	<p>Fill out the form below to see the even numbers between the start and end value.</p>
+
+				<label for="starting"><span style="font-weight:bold";>Starting Number</span></label>
+					<input type="text" id="starting" name="starting" required> <br />
+					
+				<label for="ending"><span style="font-weight:bold";>Ending Number</span></label>
+					<input type="text" id="ending" name="ending" required> <br />	
+									
+				<label for="step"><span style="font-weight:bold";>Step:</span></label>
+					<input type="text" id="step" name="step" required> <br />
+	<button onclick="displayEvens()">Display Evens</button>
+	
+	<hr />
+
+	<p>Here are the even numbers between and  by</p>
+
+	
+	
+	<!--	
+	<div>
+		Mouse tracking: <span id="trackingStatus">NOT TRACKING</span>
+	</div>
+	<fieldset>
+		<label>Mouse X:</label><label id="mousePositionX"></label>
+		<label>Mouse Y:</label><label id="mousePositionY"></label>
+	</fieldset>
+	
+	var positionY = document.getElementById("mousePositionY");
+		positionY.innerText = event.clientY;
+	-->
+	
+</body>
+</html>

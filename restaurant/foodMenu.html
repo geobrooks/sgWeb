@@ -1,47 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
 		<title>The Restaurant</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 		<link href="restaurantStyles.css" rel="stylesheet" type="text/css" />
-	<style>
-		#navigation {
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet" type="text/css">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+		
+		
+		
+		<style>
+	
+			#navigation {
 			background-color: #c06c84;
 			margin-top: -25px;
-			text-align: center;
-		}
+			
+			
+			}
 		
-		#navigation a{
+			#navigation a{
 			padding: 0px 20px;
 			color: #fff;
 			text-transform: uppercase;
 			font-family: Roboto, sans-serif;
-		}
+			
+			}
+		</style>
 		
-	</style>
-	
-	
-	
 	</head>
 	
+	
 	<body>
+	<div class="container">
 	<div class="sheet">
 	<div style="padding:20px;">
+	
+	
 			<div id="title">
 				<h1><center>The Restaurant</center></h1>
 			</div>
-			
-			<br />
+
+		<nav class="navbar navbar-default" role="navigation">
 		
-		<div id="navigation">
-		<hr />
-			<p>
-			<a href="./index.html" target="_parent">Home</a>
-			<a href="./foodMenu.html" target="_parent">Food Menu</a>
-			<a href="./drinkMenu.html" target="_parent">Drink Menu</a>
-			<a href="./contact.html" target="_parent">Contact Us</a>
-			</p>
-		<hr />
-		</div>
+			<ul class="nav nav-pills nav-fill">
+				<li class="col-sm-3 nav-item">
+					<a class="nav-link" href="./index.html" target="_parent"><i class="fas fa-home"></i>Home</a>
+				</li>
+				<li class="col-sm-3 nav-item">
+					<a class="nav-link active" href="./foodMenu.html" target="_parent">Food Menu</a>
+				</li>
+				<li class="col-sm-3 nav-item">
+					<a class="nav-link" href="./drinkMenu.html" target="_parent">Drink Menu</a>
+				</li>
+				<li class="col-sm-3 nav-item">
+					<a class="nav-link" href="./contact.html" target="_parent">Contact Us</a>
+				</li>
+			</ul>	
+	
+		</nav>
 		
 		<div id="main">
 		
@@ -159,6 +183,7 @@
 	</div>
 		
 	</div>	
+	</div>
 	</body>
 
 </html>
